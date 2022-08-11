@@ -5,13 +5,13 @@
     {{ number }}--{{ counter }}--{{ age }}
 
     <input v-model="message" />
-    <div class="text">{{ message }}</div>
+    <div class="text">{{ message }}qqqqq</div>
   </div>
 </template>
 
 <script>
-import { reactive, ref, toRefs, toRef ,watchEffect} from "vue";
-import {debounceref} from './useDebounceRef'
+import { reactive, ref, toRefs, toRef, watchEffect } from "vue";
+import { debounceref } from "./useDebounceRef";
 export default {
   props: {
     name: {
@@ -37,9 +37,7 @@ export default {
     };
 
     let message = debounceref("你好啊");
-    watchEffect((aaaa)={
-
-    })
+    watchEffect((aaaa = {}));
     return {
       state,
       number,
@@ -53,5 +51,4 @@ export default {
 </script>
 
 <style scoped>
-
 </style>
